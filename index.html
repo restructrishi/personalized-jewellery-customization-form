@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Customization Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h3 class="heading">Personalized Jewellery Customization Form</h3>
+        <form id="jewelryForm">
+            <div class="form-step active" data-step="1">
+                <label for="occasion">What is the occasion for this jewellery?
+                    <span class="help-icon" data-tooltip="This helps us tailor our recommendations to match the significance and style suitable for the event.">NOTE</span>
+                </label>
+                <select id="occasion" name="occasion" required>
+                    <option value="Engagement">Engagement</option>
+                    <option value="Anniversary">Anniversary</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Daily-wear">Daily-wear</option>
+                    <option value="Custom">Custom</option>
+                </select>
+                <input type="text" id="customOccasion" name="customOccasion" placeholder="Enter custom occasion" style="display:none;">
+                <button type="button" class="next-step">Next</button>
+            </div>
+
+            <div class="form-step" data-step="2">
+                <label>Is this a gift or a personal purchase?
+                    <span class="help-icon" data-tooltip="Understanding if the jewellery is for yourself or someone else helps us refine our suggestions based on typical gift preferences.">NOTE</span>
+                </label>
+                <div>
+                    <input type="radio" id="gift" name="purchaseType" value="Gift" required>
+                    <label for="gift">Gift</label>
+                    <input type="radio" id="personal" name="purchaseType" value="Personal Purchase">
+                    <label for="personal">Personal Purchase</label>
+                </div>
+                <button type="button" class="prev-step">Back</button>
+                <button type="button" class="next-step">Next</button>
+            </div>
+
+            <div class="form-step" data-step="3">
+                <label>Please select the gender
+                    <span class="help-icon" data-tooltip="This allows us to recommend designs and styles that align with the typical preferences of the chosen gender.">NOTE</span>
+                </label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+                <button type="button" class="prev-step">Back</button>
+                <button type="button" class="next-step">Next</button>
+            </div>
+
+            <div class="form-step" data-step="4">
+                <label>What is the age group of the wearer?
+                    <span class="help-icon" data-tooltip="Age can significantly influence jewellery style preferences, so this helps us make more suitable recommendations.">NOTE</span>
+                </label>
+                <div>
+                    <input type="radio" id="age1" name="ageGroup" value="<18" required>
+                    <label for="age1">&lt;18</label>
+                    <input type="radio" id="age2" name="ageGroup" value="18-25">
+                    <label for="age2">18-25</label>
+                    <input type="radio" id="age3" name="ageGroup" value="26-35">
+                    <label for="age3">26-35</label>
+                    <input type="radio" id="age4" name="ageGroup" value="36-50">
+                    <label for="age4">36-50</label>
+                    <input type="radio" id="age5" name="ageGroup" value="51+">
+                    <label for="age5">51+</label>
+                </div>
+                <button type="button" class="prev-step">Back</button>
+                <button type="button" class="next-step">Next</button>
+            </div>
+
+            <div class="form-step" data-step="5">
+                <label>Do you have any religious considerations for this jewellery? (Optional)
+                    <span class="help-icon" data-tooltip="Some religious beliefs might influence jewellery design choices, like specific symbols or restrictions.">NOTE</span>
+                </label>
+                <select id="religion" name="religion">
+                    <option value="None">None</option>
+                    <option value="Christianity">Christianity</option>
+                    <option value="Hinduism">Hinduism</option>
+                    <option value="Buddhism">Buddhism</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button type="button" class="prev-step">Back</button>
+                <button type="button" class="next-step">Next</button>
+            </div>
+
+            <div class="form-step" data-step="6">
+                <label>What type of jewellery are you interested in?
+                    <span class="help-icon" data-tooltip="This helps us narrow down the product category to provide more relevant recommendations.">NOTE</span>
+                </label>
+                <div>
+                    <input type="radio" id="rings" name="jewelleryType" value="Rings" required>
+                    <label for="rings">Rings</label>
+                    <input type="radio" id="necklaces" name="jewelleryType" value="Necklaces">
+                    <label for="necklaces">Necklaces</label>
+                    <input type="radio" id="pendants" name="jewelleryType" value="Pendants">
+                    <label for="pendants">Pendants</label>
+                    <input type="radio" id="bracelets" name="jewelleryType" value="Bracelets">
+                    <label for="bracelets">Bracelets</label>
+                    <input type="radio" id="earrings" name="jewelleryType" value="Earrings">
+                    <label for="earrings">Earrings</label>
+                </div>
+                <button type="button" class="prev-step">Back</button>
+                <button type="button" class="next-step">Next</button>
+            </div>
+
+            <div class="form-step" data-step="7">
+                <label>What is your budget for this jewellery?
+                    <span class="help-icon" data-tooltip="Knowing your budget helps us suggest options that fit within your financial constraints.">NOTE</span>
+                </label>
+                <div>
+                    <input type="radio" id="budget1" name="budget" value="<50" required>
+                    <label for="budget1">$50</label>
+                    <input type="radio" id="budget2" name="budget" value="50-100">
+                    <label for="budget2">$50-$100</label>
+                    <input type="radio" id="budget3" name="budget" value="100-200">
+                    <label for="budget3">$100-$200</label>
+                    <input type="radio" id="budget4" name="budget" value="200+">
+                    <label for="budget4">$200+</label>
+                </div>
+                <button type="button" class="prev-step">Back</button>
+                <button type="button" class="next-step">Next</button>
+            </div>
+
+            <div class="form-step" data-step="8">
+                <label>Would you like to match your jewellery with an outfit?
+                    <span class="help-icon" data-tooltip="Uploading an image of your outfit can help us recommend jewellery that complements your attire perfectly.">NOTE</span>
+                </label>
+                <div>
+                    <input type="radio" id="outfitYes" name="outfitMatch" value="Yes" required>
+                    <label for="outfitYes">Yes</label>
+                    <input type="radio" id="outfitNo" name="outfitMatch" value="No">
+                    <label for="outfitNo">No</label>
+                </div>
+                <div id="outfitUpload" style="display:none;">
+                    <label for="outfitImage">Upload an image of your outfit</label>
+                    <input type="file" id="outfitImage" name="outfitImage" >
+                    <img id="previewImage" src="#" alt="Outfit Image Preview" style="display:none;"/>
+                </div>
+                <button type="button" class="prev-step">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
