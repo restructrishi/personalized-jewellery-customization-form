@@ -34,4 +34,4 @@ File Structure
 - `styles.css`: The CSS file for styling the form.
 - `script.js`: The JavaScript file for adding interactivity and validation.
 
-Then click on " go live " it will provide take you to the webpage of the form .
+Then click on " go live " it will take you to the webpage of the form .
