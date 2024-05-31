@@ -10,7 +10,11 @@ Help Icons: Each question includes a help icon that displays additional informat
 Image Upload and Preview: Users can upload an image of their outfit for better jewelry recommendations, with a preview shown after upload.
 Form Validation: Ensures required fields are filled out before proceeding to the next step.
 
+
+
 Installation
+
+- For installation you have to open the new terminal and paste the commands accordingly.
 
 1. Clone the repository:
 
